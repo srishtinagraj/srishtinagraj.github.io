@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Srishti Nagraj — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <!-- Non-moving base for stable glass blur -->
+    <div class="bg-base" aria-hidden="true"></div>
+
+    <!-- Animated site backgrounds -->
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div class="bg-stars" aria-hidden="true"></div>
+    <div class="bg-parallax" aria-hidden="true"></div>
+
+    <header class="site-header" role="banner">
+      <div class="nav container" role="navigation" aria-label="Primary">
+        <a class="logo" href="#">Srishti Nagraj</a>
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="themeToggle" class="icon-btn" aria-pressed="false" aria-label="Toggle color theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero section" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-col">
+            <h1 id="hero-title" class="fade-up">Design & engineering, crafted with clarity.</h1>
+            <p class="hero-sub fade-up">I build elegant full-stack products, performant data pipelines, and delightful user experiences.</p>
+            <p class="role fade-up">Computer Science · Data & DevOps</p>
+            <div class="hero-ctas fade-up">
+              <a class="btn btn-primary" href="#projects">View Work</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <!-- Orbital particles visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-stage orbital-frame">
+              <canvas id="orbitalCanvas"></canvas>
+              <div class="orbital-glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-left">
+            <h2 id="about-title" class="fade-up">About</h2>
+            <p class="lead fade-up">I’m a Computer Science student and engineer who enjoys turning complex data into meaningful products. I focus on reliability, performance, and clear design systems.</p>
+            <p class="fade-up">Experience spans data engineering, DevOps automation, and full-stack product development. I like to keep interfaces minimal, interactions delightful, and systems resilient.</p>
+          </div>
+          <aside class="about-right" aria-hidden="false">
+            <img src="profile.jpeg" alt="Srishti Nagraj portrait" class="portrait fade-up">
+          </aside>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="center fade-up">Selected Projects</h2>
+
+          <div class="projects-grid">
+            <!-- EERIS -->
+            <article class="project-card fade-up" tabindex="0" aria-labelledby="p1">
+              <div class="thumb" role="img" aria-label="EERIS project thumbnail">
+                <img class="thumb-img" src="src/EERIS.jpeg" alt="EERIS app UI" loading="lazy" />
+              </div>
+              <h3 id="p1">EERIS</h3>
+              <p class="muted">React · Node · PostgreSQL · Airflow</p>
+              <p class="desc">Reimbursement platform with OCR and OpenAI-powered receipt classification.</p>
+              <a href="https://github.com/deshninad/EERIS" class="btn btn-ghost" target="_blank" rel="noopener">View Project</a>
+            </article>
+
+            <!-- MarketPulse (if image missing, we hide it gracefully) -->
+            <article class="project-card fade-up" tabindex="0" aria-labelledby="p2">
+              <div class="thumb" role="img" aria-label="MarketPulse thumbnail">
+                <img class="thumb-img" src="src/marketpulse.png" alt="MarketPulse analytics UI" loading="lazy"
+                     onerror="this.style.display='none'" />
+              </div>
+              <h3 id="p2">MarketPulse</h3>
+              <p class="muted">Hadoop · Pig</p>
+              <p class="desc">Analytics pipeline that processed millions of ad records for campaign insights.</p>
+            </article
+
+            <!-- Capital Safe -->
+            <article class="project-card fade-up" tabindex="0" aria-labelledby="p3">
+              <div class="thumb" role="img" aria-label="Capital Safe thumbnail">
+                <img class="thumb-img" src="src/capitalsafe.jpg" alt="Capital Safe extension" loading="lazy" />
+              </div>
+              <h3 id="p3">Capital Safe</h3>
+              <p class="muted">Chrome Extension · Node</p>
+              <p class="desc">ShellHacks winner — real-time phishing and fraud intelligence extension.</p>
+              <a href="https://devpost.com/software/capital-safe" class="btn btn-ghost" target="_blank" rel="noopener">View Project</a>
+            </article>
+
+            <!-- Hospital Management System -->
+            <article class="project-card fade-up" tabindex="0" aria-labelledby="p4">
+              <div class="thumb" role="img" aria-label="Hospital Management System thumbnail">
+                <img class="thumb-img" src="src/Hospital.jpeg" alt="Hospital Management System schema/UI" loading="lazy" />
+              </div>
+              <h3 id="p4">Hospital Management System</h3>
+              <p class="muted">PostgreSQL · SQL · PL/pgSQL &nbsp;•&nbsp; Mar 2025</p>
+              <p class="desc">Architected a PostgreSQL database, mapped ERDs for 15+ business rules, and built stored procedures for analytics and fraud-resistant reporting.</p>
+              <a href="https://usfedu-my.sharepoint.com/:p:/g/personal/marself_usf_edu/Ef246Xx7zI5GqpoqyHylAUwBQXybL88boWOgwoObkJbBRQ?e=mmmCuW" class="btn btn-ghost" target="_blank" rel="noopener">View Project</a>
+            </article>
+
+            <!-- PPE Detection System -->
+            <article class="project-card fade-up" tabindex="0" aria-labelledby="p5">
+              <div class="thumb" role="img" aria-label="PPE Detection System thumbnail">
+                <img class="thumb-img" src="src/PPE.png" alt="PPE Detection System dashboards" loading="lazy" />
+              </div>
+              <h3 id="p5">PPE Detection System</h3>
+              <p class="muted">Python · YOLOv9 · Data Visualization &nbsp;•&nbsp; Jul 2024</p>
+              <p class="desc">Engineered a YOLOv9 model hitting 95% accuracy for real-time PPE detection; processed and visualized large image datasets for safety insights.</p>
+              <a href="https://www.figma.com/design/CtasnPju4RsmqqUYVZ6QMD/IT-Challenge?node-id=0-1&t=Vhc5VchlAIWCBE9v-1" class="btn btn-ghost" target="_blank" rel="noopener">View in Figma</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE / TIMELINE WITH LOGOS -->
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="container">
+          <h2 id="experience-title" class="fade-up">Experience</h2>
+
+          <div class="timeline logos">
+            <div class="timeline-item fade-up">
+              <div class="rail" aria-hidden="true"></div>
+              <div class="logo-wrap">
+                <picture>
+                  <source srcset="src/cummins_logo.svg" type="image/svg+xml" />
+                  <img src="src/cummins_logo.png" alt="Cummins logo" width="40" height="40" class="logo-img" />
+                </picture>
+              </div>
+              <div class="timeline-card">
+                <h4>DevOps Engineering Intern — Cummins Inc.</h4>
+                <p class="meta">May 2025 — Aug 2025</p>
+                <p>Built CI/CD pipelines with GitHub Actions, automated ETL with Python &amp; SQLAlchemy, and integrated data into SQL Server with scheduled jobs.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+              <div class="rail" aria-hidden="true"></div>
+              <div class="logo-wrap">
+                <picture>
+                  <source srcset="src/cummins_logo.svg" type="image/svg+xml" />
+                  <img src="src/cummins_logo.png" alt="Cummins logo" width="40" height="40" class="logo-img" />
+                </picture>
+              </div>
+              <div class="timeline-card">
+                <h4>Data Analyst Intern — Cummins Inc.</h4>
+                <p class="meta">Jun 2024 — Aug 2024</p>
+                <p>Delivered executive Power BI dashboards from Databricks &amp; Snowflake and built PowerApps automation for Quality Alerts.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+              <div class="rail" aria-hidden="true"></div>
+              <div class="logo-wrap">
+                <img src="usf_logo.png" alt="USF logo" width="40" height="40" class="logo-img" />
+              </div>
+              <div class="timeline-card">
+                <h4>Project Management Assistant — USF IT</h4>
+                <p class="meta">Jan 2025 — Present</p>
+                <p>Managed Agile execution with Jira &amp; Confluence, authored technical documentation, and standardized delivery processes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title" class="fade-up">Contact</h2>
+          <div class="contact-panel" role="region" aria-label="Contact form">
+            <div class="panel">
+              <form id="contactForm" action="#" class="contact-form" novalidate>
+                <label class="sr-only" for="name">Name</label>
+                <input id="name" class="input" type="text" placeholder="Your name" required>
+
+                <label class="sr-only" for="email">Email</label>
+                <input id="email" class="input" type="email" placeholder="you@example.com" required>
+
+                <label class="sr-only" for="message">Message</label>
+                <textarea id="message" class="input" rows="6" placeholder="Brief message" required></textarea>
+
+                <div class="contact-actions">
+                  <button id="sendBtn" class="btn btn-primary" type="submit">Send message</button>
+                  <p class="muted">Or download <a href="/Nagraj_Srishti_Resume_Duolingo.pdf">resume</a>.</p>
+                </div>
+                <p id="formStatus" class="muted" role="status" aria-live="polite" style="margin-top:8px;"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="muted">© Srishti Nagraj — Built with care</p>
+      </div>
+    </footer>
+
+    <script src="src/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "Srishti Nagraj",
+  "contact": {
+    "email": "rishtinagraj@gmail.com",
+    "phone": "+1 (813) 760-3370",
+    "location": "Tampa, FL",
+    "linkedin": "https://linkedin.com/in/srishtinagraj",
+    "photo": "profile.jpeg",
+    "logos": {"cummins":"cummins_logo.svg","usf":"usf_logo.png"}
+  },
+  "education": {
+    "school": "University of South Florida",
+    "degree": "B.S. Computer Science",
+    "dates": "Aug 2022 - Dec 2025",
+    "gpa": "3.68/4.0"
+  },
+  "skills": ["Python","JavaScript","SQL","C#","React","Node.js","Express","PostgreSQL","Docker","AWS","GitHub Actions","Jenkins","PowerShell"],
+  "experience": [
+    {
+      "company": "Cummins Inc.",
+      "title": "DevOps Engineering Intern",
+      "dates": "May 2025 - Aug 2025",
+      "bullets": ["Built CI/CD pipelines using GitHub Actions to automate testing and deployments for internal dashboards.","Automated ETL of qTest session logs from PostgreSQL using Python and SQLAlchemy; integrated into SQL Server and scheduled via PowerShell, improving reporting accuracy.","Developed workflows to ingest GitHub Copilot license data into SQL Server powering Power BI dashboards."]
+    },
+    {
+      "company": "Cummins Inc.",
+      "title": "Data Analyst Intern",
+      "dates": "Jun 2024 - Aug 2024",
+      "bullets": ["Delivered executive Power BI dashboards from Databricks & Snowflake, enabling faster insights for senior leaders.","Built a PowerApps automation to email reminders for overdue Quality Alerts, improving follow-up."]
+    },
+    {
+      "company": "USF IT",
+      "title": "Project Management Assistant",
+      "dates": "Jan 2025 - Present",
+      "bullets": ["Managed Agile project execution using Jira and Confluence; authored technical documentation and standardized processes."]
+    }
+  ],
+  "projects": [
+    {"name":"EERIS","tech":"React, Node.js, PostgreSQL, Airflow","desc":"Reimbursement platform with OCR, OTP login, and OpenAI-powered receipt classifier. Reduced processing time by 27%."},
+    {"name":"MarketPulse","tech":"Hadoop, Pig","desc":"Processed 5M+ ad records to measure campaign KPIs and optimize allocation."}
+  ],
+  "leadership":[{"role":"USF Engineering Council - Chair","dates":"May 2024 - May 2025"},{"role":"Data Science Club - VP of Events","dates":"May 2023 - May 2024"}]
+}

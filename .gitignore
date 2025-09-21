@@ -1,0 +1,6 @@
+# Ignore local virtualenvs and large binaries
+.venv/
+*.app
+src/Visual Studio Code.app/
+.DS_Store
+node_modules/

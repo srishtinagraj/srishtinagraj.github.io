@@ -1,0 +1,11 @@
+{
+  "name": "apple-liquid-portfolio",
+  "version": "0.1.0",
+  "description": "Apple-themed portfolio with liquid display animations",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -l 5000"
+  },
+  "author": "",
+  "license": "MIT"
+}
